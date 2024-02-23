@@ -1,17 +1,34 @@
-# Data and Math
+# Dog Breed Identification
+Determine the breed of a dog in an image
 
-> **_This repository will contain, but not be limited to the following topics_**
-> * **Data Analysis**
-> * **Data Science**
-> * **Machine Learning**
->   * *Supervised Learning*
->   * *Unsupervised Learning*
-> * **Mathematics**
->   * *Probability & Statistics*
->   * *Linear Algebra*
->   * *Precalculus*
->   * *Calculus*
+[![Machine Learning](https://img.shields.io/badge/%F0%9F%A4%96-Machine_Learning-black)](https://en.wikipedia.org/wiki/Machine_learning)
+[![Deep Learning](https://img.shields.io/badge/%F0%9F%A4%96-Deep_Learning-orange)](https://en.wikipedia.org/wiki/Deep_learning)
+[![Neural Networks](https://img.shields.io/badge/%F0%9F%A7%A0-Neural_Networks-pink)](https://en.wikipedia.org/wiki/Artificial_neural_network)
+[![Transfer Learning](https://img.shields.io/badge/%E2%9A%97%EF%B8%8F-Transfer_Learning-green)](https://en.wikipedia.org/wiki/Transfer_learning)
+[![Udemy](https://img.shields.io/badge/%F0%9F%8E%93-Udemy-a435f0)](https://www.udemy.com/)
+[![Kaggle](https://img.shields.io/badge/%F0%9F%92%BB-Kaggle-20beff)](https://www.kaggle.com/)
+[![Dog Breeds](https://img.shields.io/badge/%F0%9F%90%BE-Dog_Breeds-lightgrey)](https://en.wikipedia.org/wiki/List_of_dog_breeds)
 
-This repository was created to practice all the previous mentioned topics. The repository would be structure in branches.
-1. [main](https://github.com/Diegomca98/ml-practice/tree/main): Information about the repository and its branches.
-2. [multiple-linear-regression](https://github.com/Diegomca98/ml-practice/tree/multiple-linear-regression):  Multiple Linear Regression exercises and notes.
+![Python](https://img.shields.io/badge/Python-informational?style=flat&logo=python&logoColor=f7db5d&color=326998)
+![Tensorflow](https://img.shields.io/badge/Tensorflow-informational?style=flat&logo=tensorflow&color=326998)
+
+[![GPU](https://img.shields.io/badge/%F0%9F%8E%AE-TensorFlow_with_GPU-FF9300)](https://www.tensorflow.org/guide/gpu)
+
+## Course
+This project was taken from [Complete A.I. & Machine Learning, Data Science Bootcamp](https://www.udemy.com/course/complete-machine-learning-and-data-science-zero-to-mastery/?couponCode=KEEPLEARNING), specifically the module **Neural Networks: Deep Learning, Transfer Learning and TensorFlow 2**.
+
+In this project we will use a GPU to create a neural network and train it using TensorFlow and Transfer Data with the data downloaded from [Kaggle **Closed** Competition](https://www.kaggle.com/c/dog-breed-identification/overview) to the folders `/data/train` and `/data/test`, we will follow the requirements of the competition to analyze the data and create the models necessary to identify the dog breed listed in the `/data/labels.csv`.
+
+## Competition Overview
+### Description
+> Who's a good dog? Who likes ear scratches? Well, it seems those fancy deep neural networks don't have all the answers. However, maybe they can answer that ubiquitous question we all ask when meeting a four-legged stranger: what kind of good pup is that?
+> 
+> In this playground competition, you are provided a strictly canine subset of ImageNet in order to practice fine-grained image categorization. How well you can tell your Norfolk Terriers from your Norwich Terriers? With 120 breeds of dogs and a limited number training images per class, you might find the problem more, err, ruff than you anticipated.
+
+![Dogos](./assets/border_collies.png)
+
+### Evaluation
+Submissions are evaluated on [Multi Class Log Loss](https://www.kaggle.com/wiki/MultiClassLogLoss) between the predicted probability and the observed target.
+
+## Warnings
+* Since the data from the `dog-breed-identification.zip` is to much if I upload it unzipped I get up to 10k+ changes to commit, therefore I added `*.jpg` to the `.gitignore` file, you can go to the following link to the [Kaggle Competition Data tab](https://www.kaggle.com/c/dog-breed-identification/data) and either choose the files you want to download or click on the `Download All` button to get the `train/*.jpg`, `test/*.jpg`, `labels.csv` and `sample_submission.csv`

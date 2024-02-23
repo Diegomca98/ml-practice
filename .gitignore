@@ -3,3 +3,6 @@ __pycache__
 .learn
 .env*
 .resource*
+*.jpg
+workspace
+data
