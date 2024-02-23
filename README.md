@@ -15,3 +15,4 @@
 This repository was created to practice all the previous mentioned topics. The repository would be structure in branches.
 1. [main](https://github.com/Diegomca98/ml-practice/tree/main): Information about the repository and its branches.
 2. [multiple-linear-regression](https://github.com/Diegomca98/ml-practice/tree/multiple-linear-regression):  Multiple Linear Regression exercises and notes.
+3. [dog-breed-id](https://github.com/Diegomca98/ml-practice/tree/dog-breed-id):  Dog breed identification project.
