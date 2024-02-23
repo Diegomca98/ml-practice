@@ -30,6 +30,13 @@ In this project we will use a GPU to create a neural network and train it using 
 ### Evaluation
 Submissions are evaluated on [Multi Class Log Loss](https://www.kaggle.com/wiki/MultiClassLogLoss) between the predicted probability and the observed target.
 
+## Notes
+For Google Colab working environment you can check the following resources:
+* [Welcome To Colaboratory](https://colab.research.google.com/notebooks/intro.ipynb)
+* [External data: Local Files, Drive, Sheets, and Cloud Storage](https://colab.research.google.com/notebooks/io.ipynb)
+* [Google Colab FAQ](https://research.google.com/colaboratory/faq.html)
+* [TensorFlow with GPU](https://colab.research.google.com/notebooks/gpu.ipynb)
+
 ## Warnings
 * In case you choose to work using VS Code, Anaconda or any other local environment you might use this repository and check information about how to use a GPU with Tensorflow(Link in the badges) and information on GPU Capability from [NVIDIA](https://developer.nvidia.com/cuda-gpus)
 
