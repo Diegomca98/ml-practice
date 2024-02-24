@@ -30,6 +30,13 @@ In this project we will use a GPU to create a neural network and train it using 
 ### Evaluation
 Submissions are evaluated on [Multi Class Log Loss](https://www.kaggle.com/wiki/MultiClassLogLoss) between the predicted probability and the observed target.
 
+## Features
+Some information about the data
+* We're dealing with images(unstructured data)
+* There are 120 breed of dogs (Meaning there are 120 different classes)
+* There are around 10k+ images in the training set(This set has labels)
+* There are around 10k+ images in the test set(This set doesn't have labels)
+
 ## Notes
 For Google Colab working environment you can check the following resources:
 * [Welcome To Colaboratory](https://colab.research.google.com/notebooks/intro.ipynb)
