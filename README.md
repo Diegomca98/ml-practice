@@ -44,27 +44,27 @@ Notebook Structure
 |   ├── ✔️ from sklearn.model_selection import train_test_split
 |   └── ✔️ Separate Train Data into x_train, y_train, x_val, y_val
 ├── 6. Preprocess Images
-|   ├── a. Turn Images into Tensors
-|   ├── b. Turn Data into Batches
-|   ├── c. Visualizing Data
-|   └── d. Preparing Our Inputs and Outputs
+|   ├── 🕜 Turn Images into Tensors
+|   ├── 🕜 Turn Data into Batches
+|   ├── 🕜 Visualizing Data
+|   └── 🕜 Preparing Our Inputs and Outputs
 ├── 7. Model Experiments
-|   ├── a. Building the Model
-|   ├── b. Evaluating the Model
-|   └── c. Preventing Overfitting
+|   ├── 🕜 Building the Model
+|   ├── 🕜 Evaluating the Model
+|   └── 🕜 Preventing Overfitting
 ├── 8. Deep Neural Network
-|   ├── a. Training the DNN
-|   ├── b. Evaluating Performance with TensorBoard
-|   ├── a. Make Predictions
-|   ├── b. Transform Predictions to Text
-|   ├── c. Visualizing Predictions
-|   └── d. Evaluate Predictions
+|   ├── 🕜 Training the DNN
+|   ├── 🕜 Evaluating Performance with TensorBoard
+|   ├── 🕜 Make Predictions
+|   ├── 🕜 Transform Predictions to Text
+|   ├── 🕜 Visualizing Predictions
+|   └── 🕜 Evaluate Predictions
 ├── 11. Model
-|   ├── a. Save Model
-|   └── b. Load Model
+|   ├── 🕜 Save Model
+|   └── 🕜 Load Model
 ├── 12. Test Data Predictions
-|   ├── a. Predictions with Test Data
-|   └── b. Predictions with our own Images
+|   ├── 🕜 Predictions with Test Data
+|   └── 🕜 Predictions with our own Images
 └── 13. Submit the model to Kaggle
 ```
 ## Competition Overview
