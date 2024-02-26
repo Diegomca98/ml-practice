@@ -28,19 +28,21 @@ For this project we are going to have 3 sets, the *`train`* and *`test`* sets pr
 ```
 Notebook Structure
 |
-├── 1. Setup Workspace ✔️
-|   └── a. Create Google Colab Notebook
-├── 2. Link Drive ✔️
-|   └── a. Upload Data to Drive
-├── 3. Import ✔️
-|   ├── a. TensorFlow
-|   ├── b. TensorFlow Hub
-|   └── c. Setting up a GPU for use
-├── 4. Loading and Checking Data ✔️
-|   ├── a. Loading Data Labels
-|   ├── b. Preparing the Images
-|   └── c. Turning Data into Numbers
-├── 5. Creating Validation Set ✔️
+├── 1. Setup Workspace
+|   └── ✔️ Create Google Colab Notebook
+├── 2. Link Drive
+|   └── ✔️ Upload Data to Drive
+├── 3. Import
+|   ├── ✔️ TensorFlow
+|   ├── ✔️ TensorFlow Hub
+|   └── ✔️ Setting up a GPU for use
+├── 4. Loading and Checking Data
+|   ├── ✔️ Loading Data Labels
+|   ├── ✔️ Preparing the Images
+|   └── ✔️ Turning Data into Numbers
+├── 5. Split Data into Sets
+|   ├── ✔️ from sklearn.model_selection import train_test_split
+|   └── ✔️ Separate Train Data into x_train, y_train, x_val, y_val
 ├── 6. Preprocess Images
 |   ├── a. Turn Images into Tensors
 |   ├── b. Turn Data into Batches
