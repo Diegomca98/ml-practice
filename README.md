@@ -23,7 +23,7 @@ For this project we are going to have 3 sets, the *`train`* and *`test`* sets pr
 
 ![The 3 Sets](./assets/3_sets_analogy.png)
 
-## Steps
+### Notebook Structure
 
 ```
 Notebook Structure
