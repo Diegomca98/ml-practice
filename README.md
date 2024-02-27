@@ -54,7 +54,7 @@ Notebook Structure
 |   ├── ✔️ Function to return a tuple of Tensors. Takes img_path and label as inputs
 |   ├── ✔️ Function to turn our data into 32 sized batches with logic dependant on the type of set (Training, Validation or Test)
 |   ├── ✔️ Create and check training and validation data batches
-|   ├── 🕜 Visualizing Data
+|   ├── ✔️ Visualizing Data to better understand the batches
 ├── 8. Preparing Our Inputs and Outputs
 ├── 9. Model Experiments
 |   ├── 🕜 Building the Model
