@@ -1,4 +1,4 @@
-# Data and Math
+# Research and Learning Projects
 
 > **_This repository will contain, but not be limited to the following topics_**
 > * **Data Analysis**
