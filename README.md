@@ -44,15 +44,23 @@ Notebook Structure
 |   ├── ✔️ from sklearn.model_selection import train_test_split
 |   └── ✔️ Separate Train Data into x_train, y_train, x_val, y_val
 ├── 6. Preprocess Images
-|   ├── 🕜 Turn Images into Tensors
-|   ├── 🕜 Turn Data into Batches
+|   ├── ✔️ Take img_path and img_size as inputs
+|   ├── ✔️ Use TensorFlow to read the file and save it to a variable called img
+|   ├── ✔️ Turn our image (jpg) into Tensors
+|   ├── ✔️ Normalize our image tensor (convert color channel values from 0-255 to 0-1)
+|   ├── ✔️ Resize the image to be (224,224)
+|   ├── ✔️ Return the `mod_image`
+├── 7. Turn Data into Batches
+|   ├── ✔️ Function to return a tuple of Tensors. Takes img_path and label as inputs
+|   ├── ✔️ Function to turn our data into 32 sized batches with logic dependant on the type of set (Training, Validation or Test)
+|   ├── ✔️ Create and check training and validation data batches
 |   ├── 🕜 Visualizing Data
-|   └── 🕜 Preparing Our Inputs and Outputs
-├── 7. Model Experiments
+├── 8. Preparing Our Inputs and Outputs
+├── 9. Model Experiments
 |   ├── 🕜 Building the Model
 |   ├── 🕜 Evaluating the Model
 |   └── 🕜 Preventing Overfitting
-├── 8. Deep Neural Network
+├── 10. Deep Neural Network
 |   ├── 🕜 Training the DNN
 |   ├── 🕜 Evaluating Performance with TensorBoard
 |   ├── 🕜 Make Predictions
@@ -86,6 +94,51 @@ Some information about the data
 * There are around 10k+ images in the test set(This set doesn't have labels)
 
 ## Notes
+* To work with TensorFlow we have to transform the data into Tensors, the Tensors are pretty similar to Numpy Arrays:
+  * If preprocessing images we use `matplotlib.pyplot.imread(filename)` we'll get a `h by width by color_channel` Numpy Array and if we transform the image to tensors using `tensorflow.constant(filename)` we will get the same result as the Numpy Array, but as type `tensorflow.Tensor`
+  
+  ```python
+  np_array = matplotlib.pyplot.imread(image)
+  tensor = tensorflow.constant(image)
+
+  np_array[:2], tensor[:2]
+
+  <Output>:
+    (array([[[ 89, 137,  89],
+         [ 76, 124,  76],
+         [ 63, 111,  61],
+         ...,
+         [ 77, 133,  86],
+         [ 76, 134,  86],
+         [ 76, 134,  86]],
+ 
+        [[ 72, 119,  75],
+         [ 67, 114,  68],
+         [ 63, 110,  64],
+         ...,
+         [ 75, 131,  84],
+         [ 74, 132,  84],
+         [ 74, 132,  84]]], dtype=uint8),
+    <tf.Tensor: shape=(2, 350, 3), dtype=uint8, numpy=
+    array([[[ 89, 137,  89],
+            [ 76, 124,  76],
+            [ 63, 111,  61],
+            ...,
+            [ 77, 133,  86],
+            [ 76, 134,  86],
+            [ 76, 134,  86]],
+    
+            [[ 72, 119,  75],
+            [ 67, 114,  68],
+            [ 63, 110,  64],
+            ...,
+            [ 75, 131,  84],
+            [ 74, 132,  84],
+            [ 74, 132,  84]]], dtype=uint8)>)
+  ```
+  * 
+
+## Useful Resources
 For Google Colab working environment you can check the following resources:
 * [Welcome To Colaboratory](https://colab.research.google.com/notebooks/intro.ipynb)
 * [External data: Local Files, Drive, Sheets, and Cloud Storage](https://colab.research.google.com/notebooks/io.ipynb)
@@ -95,6 +148,13 @@ For Google Colab working environment you can check the following resources:
 
 For information about good practices, recommendations, etectera for working with this kind of data and models you can check the following resources:
 * [Prepare image training data for classification](https://cloud.google.com/vertex-ai/docs/image-data/classification/prepare-data)
+
+TensorFlow Documentation and Useful Resources:
+* [TensorFlow Official Site](https://www.tensorflow.org/)
+* [TensorFlow Docs](https://www.tensorflow.org/guide)
+* [TensorFlow Tutorials](https://www.tensorflow.org/tutorials)
+* [Load and Preprocess Images](https://www.tensorflow.org/tutorials/load_data/images)
+* [tf.data: Build TensorFlow input pipelines](https://www.tensorflow.org/guide/data)
 
 ## Warnings
 * In case you choose to work using VS Code, Anaconda or any other local environment you might use this repository and check information about how to use a GPU with Tensorflow(Link in the badges) and information on GPU Capability from [NVIDIA](https://developer.nvidia.com/cuda-gpus)
