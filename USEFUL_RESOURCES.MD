@@ -1,5 +1,12 @@
 # Useful Docs & Resources
 
+## Useful Files in this Repository Branch
+
+[![README.MD](https://img.shields.io/badge/📝-Notes-lightgrey)](https://github.com/Diegomca98/research-and-learning/blob/dog-breed-id/README.MD)
+[![Step by Step Summary Diagram](https://img.shields.io/badge/🔍-Notebook_Diagram-lightblue)](https://github.com/Diegomca98/research-and-learning/blob/dog-breed-id/NOTEBOOK_STRUCTURE.MD)
+[![Notes](https://img.shields.io/badge/📝-Notes-lightgrey)](https://github.com/Diegomca98/research-and-learning/blob/dog-breed-id/NOTES.MD)
+
+
 ## How machines learn and what's going on behind the scenes?
 > If you're starting to work with deep learning neural networks you can check this list of resources, here you're going to find technical and non-technical resources, such as **official documentation**, **specialized articles**, **videos**, **code examples** and maybe more on how neural networks work, implementation and how bussineses uses them to improve themselves.
 
