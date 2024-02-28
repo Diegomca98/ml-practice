@@ -1,6 +1,14 @@
 # Dog Breed Identification
-Determine the breed of a dog in an image
+Model to identify different dog breeds using Unstructured Image Data
 
+## Quick Overview
+Performed a data check of the images to understand the structure of the data, splitted the data to create a validation set 
+and process image data to transform into batches of Tensors using TensorFlow. 
+
+Used Transfer Learning to train and improve a Deep Neural Network to identify dog breeds from a list of 120 breeds 
+and 10k+ image files
+
+### Techniques & Tools
 [![Machine Learning](https://img.shields.io/badge/%F0%9F%A4%96-Machine_Learning-black)](https://en.wikipedia.org/wiki/Machine_learning)
 [![Deep Learning](https://img.shields.io/badge/%F0%9F%A4%96-Deep_Learning-orange)](https://en.wikipedia.org/wiki/Deep_learning)
 [![Neural Networks](https://img.shields.io/badge/%F0%9F%A7%A0-Neural_Networks-pink)](https://en.wikipedia.org/wiki/Artificial_neural_network)
@@ -11,8 +19,17 @@ Determine the breed of a dog in an image
 
 ![Python](https://img.shields.io/badge/Python-informational?style=flat&logo=python&logoColor=f7db5d&color=326998)
 ![Tensorflow](https://img.shields.io/badge/Tensorflow-informational?style=flat&logo=tensorflow&color=326998)
+[![mobilenet_v2](https://img.shields.io/badge/mobilenet_V2-FF9300?logo=google)](https://www.kaggle.com/models/google/mobilenet-v2/frameworks/tensorFlow2/variations/130-224-classification/versions/1?tfhub-redirect=true)
 
 [![GPU](https://img.shields.io/badge/%F0%9F%8E%AE-TensorFlow_with_GPU-FF9300)](https://www.tensorflow.org/guide/gpu)
+
+
+### Useful Files in this Repository Branch
+
+[![Step by Step Summary Diagram](https://img.shields.io/badge/🔍-Notebook_Diagram-lightblue)](https://github.com/Diegomca98/research-and-learning/blob/dog-breed-id/notebook_structure.md)
+[![Useful Resources](https://img.shields.io/badge/🛠️-Useful_Resources-pink)](https://github.com/Diegomca98/research-and-learning/blob/dog-breed-id/useful_resources.MD)
+[![Notes](https://img.shields.io/badge/📝-Notes-lightgrey)](https://github.com/Diegomca98/research-and-learning/blob/dog-breed-id/NOTES.MD)
+
 
 ## Project Information
 This project was taken from [Complete A.I. & Machine Learning, Data Science Bootcamp](https://www.udemy.com/course/complete-machine-learning-and-data-science-zero-to-mastery/), specifically the module **Neural Networks: Deep Learning, Transfer Learning and TensorFlow 2**.
@@ -23,59 +40,13 @@ For this project we are going to have 3 sets, the *`train`* and *`test`* sets pr
 
 ![The 3 Sets](./assets/3_sets_analogy.png)
 
-### Notebook Structure
+### Features
+Some information about the data
+* We're dealing with images(unstructured data)
+* There are 120 breed of dogs (Meaning there are 120 different classes)
+* There are around 10k+ images in the training set(This set has labels)
+* There are around 10k+ images in the test set(This set doesn't have labels)
 
-```
-Notebook Structure
-|
-├── 1. Setup Workspace
-|   └── ✔️ Create Google Colab Notebook
-├── 2. Link Drive
-|   └── ✔️ Upload Data to Drive
-├── 3. Import
-|   ├── ✔️ TensorFlow
-|   ├── ✔️ TensorFlow Hub
-|   └── ✔️ Setting up a GPU for use
-├── 4. Loading and Checking Data
-|   ├── ✔️ Loading Data Labels
-|   ├── ✔️ Preparing the Images
-|   └── ✔️ Turning Data into Numbers
-├── 5. Split Data into Sets
-|   ├── ✔️ from sklearn.model_selection import train_test_split
-|   └── ✔️ Separate Train Data into x_train, y_train, x_val, y_val
-├── 6. Preprocess Images
-|   ├── ✔️ Take img_path and img_size as inputs
-|   ├── ✔️ Use TensorFlow to read the file and save it to a variable called img
-|   ├── ✔️ Turn our image (jpg) into Tensors
-|   ├── ✔️ Normalize our image tensor (convert color channel values from 0-255 to 0-1)
-|   ├── ✔️ Resize the image to be (224,224)
-|   ├── ✔️ Return the `mod_image`
-├── 7. Turn Data into Batches
-|   ├── ✔️ Function to return a tuple of Tensors. Takes img_path and label as inputs
-|   ├── ✔️ Function to turn our data into 32 sized batches with logic dependant on the type of set (Training, Validation or Test)
-|   ├── ✔️ Create and check training and validation data batches
-|   ├── ✔️ Visualizing Data to better understand the batches
-├── 8. Preparing Our Inputs and Outputs
-|   ├── ✔️ Choosing a model that suits our problem using transfer learning
-├── 9. Model Experiments
-|   ├── 🕜 Building the Model
-|   ├── ❗ Evaluating the Model
-|   └── ❗ Preventing Overfitting
-├── 10. Deep Neural Network
-|   ├── ❗ Training the DNN
-|   ├── ❗ Evaluating Performance with TensorBoard
-|   ├── ❗ Make Predictions
-|   ├── ❗ Transform Predictions to Text
-|   ├── ❗ Visualizing Predictions
-|   └── ❗ Evaluate Predictions
-├── 11. Model
-|   ├── ❗ Save Model
-|   └── ❗ Load Model
-├── 12. Test Data Predictions
-|   ├── ❗ Predictions with Test Data
-|   └── ❗ Predictions with our own Images
-└── 13. Submit the model to Kaggle
-```
 ## Competition Overview
 ### Description
 > Who's a good dog? Who likes ear scratches? Well, it seems those fancy deep neural networks don't have all the answers. However, maybe they can answer that ubiquitous question we all ask when meeting a four-legged stranger: what kind of good pup is that?
@@ -87,106 +58,7 @@ Notebook Structure
 ### Evaluation
 Submissions are evaluated on [Multi Class Log Loss](https://www.kaggle.com/wiki/MultiClassLogLoss) between the predicted probability and the observed target.
 
-## Features
-Some information about the data
-* We're dealing with images(unstructured data)
-* There are 120 breed of dogs (Meaning there are 120 different classes)
-* There are around 10k+ images in the training set(This set has labels)
-* There are around 10k+ images in the test set(This set doesn't have labels)
-
-## Notes
-* To work with TensorFlow we have to transform the data into Tensors, the Tensors are pretty similar to Numpy Arrays:
-  * If preprocessing images we use `matplotlib.pyplot.imread(filename)` we'll get a `h by width by color_channel` Numpy Array and if we transform the image to tensors using `tensorflow.constant(filename)` we will get the same result as the Numpy Array, but as type `tensorflow.Tensor`
-  
-  ```python
-  np_array = matplotlib.pyplot.imread(image)
-  tensor = tensorflow.constant(image)
-
-  np_array[:2], tensor[:2]
-
-  <Output>:
-    (array([[[ 89, 137,  89],
-         [ 76, 124,  76],
-         [ 63, 111,  61],
-         ...,
-         [ 77, 133,  86],
-         [ 76, 134,  86],
-         [ 76, 134,  86]],
- 
-        [[ 72, 119,  75],
-         [ 67, 114,  68],
-         [ 63, 110,  64],
-         ...,
-         [ 75, 131,  84],
-         [ 74, 132,  84],
-         [ 74, 132,  84]]], dtype=uint8),
-    <tf.Tensor: shape=(2, 350, 3), dtype=uint8, numpy=
-    array([[[ 89, 137,  89],
-            [ 76, 124,  76],
-            [ 63, 111,  61],
-            ...,
-            [ 77, 133,  86],
-            [ 76, 134,  86],
-            [ 76, 134,  86]],
-    
-            [[ 72, 119,  75],
-            [ 67, 114,  68],
-            [ 63, 110,  64],
-            ...,
-            [ 75, 131,  84],
-            [ 74, 132,  84],
-            [ 74, 132,  84]]], dtype=uint8)>)
-  ```
-
-## Useful Docs & Resources
-
-### How machines learn and what's going on behind the scenes?
-> If you're starting to work with deep learning neural networks you can check this set of resources, here you're going to find technical and non-technical resources on how neural networks work and how bussineses uses them to improve
-
-* **Technical General Resources**
-  * [3Blue1Brown Youtube Channel](https://www.youtube.com/@3blue1brown)
-    * [3Blue1Brown Neural Networks Playlist](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
-  * [paperswithcode](https://paperswithcode.com/)
-  * [Andrei Karpathy's talk on AI at Tesla](https://www.youtube.com/watch?v=oBklltKXtDE&t=173s)
-* **Non-Technical General Resources:**
-  * [How Machines Learn by GCP Grey on YouTube](https://www.youtube.com/watch?v=R9OHn5ZF4Uo)
-
-* **TensorFlow**
-  * [TensorFlow Official Site](https://www.tensorflow.org/)
-  * [TensorFlow Docs](https://www.tensorflow.org/guide)
-  * [TensorFlow Tutorials](https://www.tensorflow.org/tutorials)
-  * [Load and Preprocess Images](https://www.tensorflow.org/tutorials/load_data/images)
-  * [tf.data: Build TensorFlow input pipelines](https://www.tensorflow.org/guide/data)
-  * [SavedModels from TF Hub in TensorFlow 2](https://www.tensorflow.org/hub/tf2_saved_model#using_a_savedmodel_in_low-level_tensorflow)
-
-* **Kaggle**
-  * [How to Use Kaggle Models](https://www.kaggle.com/docs/models)
-  * [Easiest way to download kaggle data in Google Colab](https://www.kaggle.com/discussions/general/74235)
-  * [GeeksforGeeks - Import Kaggle Datasets into Google Colab](https://www.geeksforgeeks.org/how-to-import-kaggle-datasets-directly-into-google-colab/)
-  * [Medium - Import Kaggle Datasets into Google Colab](https://josiah-adesola.medium.com/3-simple-steps-to-import-kaggle-dataset-directly-into-google-colab-96428eab9678)
-
-* **Transfer Learning:**
-  * [TensorFlow Hub](https://www.kaggle.com/models?tfhub-redirect=true)
-  * [PyTorch Hub](https://pytorch.org/hub/)
-
-* **Keras**
-  * [Mobilenet](https://keras.io/api/applications/mobilenet/)
-
-### Google Colab Environment
-> For Google Colab working environment you can check the following resources:
-
-* [Welcome To Colaboratory](https://colab.research.google.com/notebooks/intro.ipynb)
-* [External data: Local Files, Drive, Sheets, and Cloud Storage](https://colab.research.google.com/notebooks/io.ipynb)
-* [Google Colab FAQ](https://research.google.com/colaboratory/faq.html)
-* [TensorFlow with GPU](https://colab.research.google.com/notebooks/gpu.ipynb)
-* [@param Google Colab Forms](https://colab.research.google.com/notebooks/forms.ipynb)
-
-### Image Processing Information
-> For information about good practices, recommendations, etectera for working with this kind of data and models you can check the following resources
-
-* [Prepare image training data for classification](https://cloud.google.com/vertex-ai/docs/image-data/classification/prepare-data)
-
-
+##
 ## Warnings
 * In case you choose to work using VS Code, Anaconda or any other local environment you might use this repository and check information about how to use a GPU with Tensorflow(Link in the badges) and information on GPU Capability from [NVIDIA](https://developer.nvidia.com/cuda-gpus)
 

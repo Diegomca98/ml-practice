@@ -1,0 +1,72 @@
+# Notebook Structure
+
+```
+ ______________________________________________________________________
+|                                                                      |
+|                         STEP-BY-STEP PROCESS                         |
+|______________________________________________________________________|
+|
+├── 1. Setup Workspace
+|   └── ✔️ Create Google Colab Notebook
+|
+├── 2. Link Drive
+|   └── ✔️ Upload Data to Drive
+|
+├── 3. Import
+|   ├── ✔️ TensorFlow
+|   ├── ✔️ TensorFlow Hub
+|   └── ✔️ Setting up a GPU for use
+|
+├── 4. Loading and Checking Data
+|   ├── ✔️ Loading Data Labels
+|   └── ✔️ Preparing the Images
+|
+├── 5. Split Data into Sets
+|   ├── ✔️ Turning Data Labels into Numbers
+|   ├── ✔️ from sklearn.model_selection import train_test_split
+|   └── ✔️ Separate Train Data into x_train, y_train, x_val, y_val
+|
+├── 6. Preprocess Images
+|   ├── ✔️ Create Function to Preprocess the Images
+|   |   ├── ✔️ Take img_path and img_size as inputs
+|   |   ├── ✔️ Use TensorFlow to read the file and save it to a variable called img
+|   |   ├── ✔️ Turn our image (jpg) into Tensors
+|   |   ├── ✔️ Normalize our image tensor (convert color channel values from 0-255 to 0-1)
+|   |   ├── ✔️ Resize the image to be (224,224)
+|   |   └── ✔️ Return the modified image
+|   |
+├── 7. Turn Data into Batches
+|   ├── ✔️ Function to return a tuple of Tensors. Takes img_path and label as inputs
+|   ├── ✔️ Function to turn our data into 32 sized batches with logic dependant on the type of set (Training, Validation or Test)
+|   ├── ✔️ Create and check training and validation data batches
+|   └── ✔️ Visualizing Data Batches to better understand the batches
+|
+├── 8. Preparing Our Inputs and Outputs
+|   └── ✔️ Choosing a model that suits our problem using transfer learning
+|
+├── 9. Model Experiments
+|   ├── ✔️ Building the Model
+|   ├── 🕜 Implementing Callbacks
+|   |   ├── 🕜 TensorBoard Callback
+|   |   ├── 🕜 Early Stop Callback
+|   ├── ❗ Evaluating the Model
+|   └── ❗ Preventing Overfitting
+|
+├── 10. Deep Neural Network
+|   ├── ❗ Training the DNN
+|   ├── ❗ Evaluating Performance with TensorBoard
+|   ├── ❗ Make Predictions
+|   ├── ❗ Transform Predictions to Text
+|   ├── ❗ Visualizing Predictions
+|   └── ❗ Evaluate Predictions
+|
+├── 11. Model
+|   ├── ❗ Save Model
+|   └── ❗ Load Model
+|
+├── 12. Test Data Predictions
+|   ├── ❗ Predictions with Test Data
+|   └── ❗ Predictions with our own Images
+|
+└── 13. Submit the model to Kaggle
+```
