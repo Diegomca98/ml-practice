@@ -56,23 +56,24 @@ Notebook Structure
 |   ├── ✔️ Create and check training and validation data batches
 |   ├── ✔️ Visualizing Data to better understand the batches
 ├── 8. Preparing Our Inputs and Outputs
+|   ├── ✔️ Choosing a model that suits our problem using transfer learning
 ├── 9. Model Experiments
 |   ├── 🕜 Building the Model
-|   ├── 🕜 Evaluating the Model
-|   └── 🕜 Preventing Overfitting
+|   ├── ❗ Evaluating the Model
+|   └── ❗ Preventing Overfitting
 ├── 10. Deep Neural Network
-|   ├── 🕜 Training the DNN
-|   ├── 🕜 Evaluating Performance with TensorBoard
-|   ├── 🕜 Make Predictions
-|   ├── 🕜 Transform Predictions to Text
-|   ├── 🕜 Visualizing Predictions
-|   └── 🕜 Evaluate Predictions
+|   ├── ❗ Training the DNN
+|   ├── ❗ Evaluating Performance with TensorBoard
+|   ├── ❗ Make Predictions
+|   ├── ❗ Transform Predictions to Text
+|   ├── ❗ Visualizing Predictions
+|   └── ❗ Evaluate Predictions
 ├── 11. Model
-|   ├── 🕜 Save Model
-|   └── 🕜 Load Model
+|   ├── ❗ Save Model
+|   └── ❗ Load Model
 ├── 12. Test Data Predictions
-|   ├── 🕜 Predictions with Test Data
-|   └── 🕜 Predictions with our own Images
+|   ├── ❗ Predictions with Test Data
+|   └── ❗ Predictions with our own Images
 └── 13. Submit the model to Kaggle
 ```
 ## Competition Overview
@@ -136,25 +137,55 @@ Some information about the data
             [ 74, 132,  84],
             [ 74, 132,  84]]], dtype=uint8)>)
   ```
-  * 
 
-## Useful Resources
-For Google Colab working environment you can check the following resources:
+## Useful Docs & Resources
+
+### How machines learn and what's going on behind the scenes?
+> If you're starting to work with deep learning neural networks you can check this set of resources, here you're going to find technical and non-technical resources on how neural networks work and how bussineses uses them to improve
+
+* **Technical General Resources**
+  * [3Blue1Brown Youtube Channel](https://www.youtube.com/@3blue1brown)
+    * [3Blue1Brown Neural Networks Playlist](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
+  * [paperswithcode](https://paperswithcode.com/)
+  * [Andrei Karpathy's talk on AI at Tesla](https://www.youtube.com/watch?v=oBklltKXtDE&t=173s)
+* **Non-Technical General Resources:**
+  * [How Machines Learn by GCP Grey on YouTube](https://www.youtube.com/watch?v=R9OHn5ZF4Uo)
+
+* **TensorFlow**
+  * [TensorFlow Official Site](https://www.tensorflow.org/)
+  * [TensorFlow Docs](https://www.tensorflow.org/guide)
+  * [TensorFlow Tutorials](https://www.tensorflow.org/tutorials)
+  * [Load and Preprocess Images](https://www.tensorflow.org/tutorials/load_data/images)
+  * [tf.data: Build TensorFlow input pipelines](https://www.tensorflow.org/guide/data)
+  * [SavedModels from TF Hub in TensorFlow 2](https://www.tensorflow.org/hub/tf2_saved_model#using_a_savedmodel_in_low-level_tensorflow)
+
+* **Kaggle**
+  * [How to Use Kaggle Models](https://www.kaggle.com/docs/models)
+  * [Easiest way to download kaggle data in Google Colab](https://www.kaggle.com/discussions/general/74235)
+  * [GeeksforGeeks - Import Kaggle Datasets into Google Colab](https://www.geeksforgeeks.org/how-to-import-kaggle-datasets-directly-into-google-colab/)
+  * [Medium - Import Kaggle Datasets into Google Colab](https://josiah-adesola.medium.com/3-simple-steps-to-import-kaggle-dataset-directly-into-google-colab-96428eab9678)
+
+* **Transfer Learning:**
+  * [TensorFlow Hub](https://www.kaggle.com/models?tfhub-redirect=true)
+  * [PyTorch Hub](https://pytorch.org/hub/)
+
+* **Keras**
+  * [Mobilenet](https://keras.io/api/applications/mobilenet/)
+
+### Google Colab Environment
+> For Google Colab working environment you can check the following resources:
+
 * [Welcome To Colaboratory](https://colab.research.google.com/notebooks/intro.ipynb)
 * [External data: Local Files, Drive, Sheets, and Cloud Storage](https://colab.research.google.com/notebooks/io.ipynb)
 * [Google Colab FAQ](https://research.google.com/colaboratory/faq.html)
 * [TensorFlow with GPU](https://colab.research.google.com/notebooks/gpu.ipynb)
 * [@param Google Colab Forms](https://colab.research.google.com/notebooks/forms.ipynb)
 
-For information about good practices, recommendations, etectera for working with this kind of data and models you can check the following resources:
+### Image Processing Information
+> For information about good practices, recommendations, etectera for working with this kind of data and models you can check the following resources
+
 * [Prepare image training data for classification](https://cloud.google.com/vertex-ai/docs/image-data/classification/prepare-data)
 
-TensorFlow Documentation and Useful Resources:
-* [TensorFlow Official Site](https://www.tensorflow.org/)
-* [TensorFlow Docs](https://www.tensorflow.org/guide)
-* [TensorFlow Tutorials](https://www.tensorflow.org/tutorials)
-* [Load and Preprocess Images](https://www.tensorflow.org/tutorials/load_data/images)
-* [tf.data: Build TensorFlow input pipelines](https://www.tensorflow.org/guide/data)
 
 ## Warnings
 * In case you choose to work using VS Code, Anaconda or any other local environment you might use this repository and check information about how to use a GPU with Tensorflow(Link in the badges) and information on GPU Capability from [NVIDIA](https://developer.nvidia.com/cuda-gpus)
