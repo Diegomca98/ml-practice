@@ -1,7 +1,7 @@
 # Notebook Structure
 
 ## Techniques & Tools
-[![README.MD](https://img.shields.io/badge/📝-Notes-lightgrey)](https://github.com/Diegomca98/research-and-learning/blob/dog-breed-id/README.MD)
+[![README.MD](https://img.shields.io/badge/📝-README-lightgrey)](https://github.com/Diegomca98/research-and-learning/blob/dog-breed-id/README.MD)
 [![Useful Resources](https://img.shields.io/badge/🛠️-Useful_Resources-pink)](https://github.com/Diegomca98/research-and-learning/blob/dog-breed-id/USEFUL_RESOURCES.MD)
 [![Notes](https://img.shields.io/badge/📝-Notes-lightgrey)](https://github.com/Diegomca98/research-and-learning/blob/dog-breed-id/NOTES.MD)
 

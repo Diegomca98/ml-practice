@@ -2,7 +2,7 @@
 
 ## Useful Files in this Repository Branch
 
-[![README.MD](https://img.shields.io/badge/📝-Notes-lightgrey)](https://github.com/Diegomca98/research-and-learning/blob/dog-breed-id/README.MD)
+[![README.MD](https://img.shields.io/badge/📝-README-lightgrey)](https://github.com/Diegomca98/research-and-learning/blob/dog-breed-id/README.MD)
 [![Step by Step Summary Diagram](https://img.shields.io/badge/🔍-Notebook_Diagram-lightblue)](https://github.com/Diegomca98/research-and-learning/blob/dog-breed-id/NOTEBOOK_STRUCTURE.MD)
 [![Notes](https://img.shields.io/badge/📝-Notes-lightgrey)](https://github.com/Diegomca98/research-and-learning/blob/dog-breed-id/NOTES.MD)
 
