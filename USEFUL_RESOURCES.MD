@@ -23,6 +23,7 @@
   * [Andrei Karpathy's talk on AI at Tesla](https://www.youtube.com/watch?v=oBklltKXtDE&t=173s)
   * [Medium - A Comprehensive Guide to Convolutional Neural Networks](https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53)
   * [Softmax Function](https://en.wikipedia.org/wiki/Softmax_function)
+  * [How to Avoid Overfitting in Deep Learning Neural Networks](https://machinelearningmastery.com/introduction-to-regularization-to-reduce-overfitting-and-improve-generalization-error/)
 
 
 ### TensorFlow
@@ -51,6 +52,7 @@
   * [Callbacks - tf.keras.callbacks.Callback](https://www.tensorflow.org/api_docs/python/tf/keras/callbacks/Callback)
   * [Custom Callbacks - Writing your own callbacks](https://www.tensorflow.org/guide/keras/writing_your_own_callbacks)
   * [TensorBoard - tf.keras.callbacks.TensorBoard](https://www.tensorflow.org/api_docs/python/tf/keras/callbacks/TensorBoard)
+  * [Early Stopping Callback](https://www.tensorflow.org/api_docs/python/tf/keras/callbacks/EarlyStopping)
 
 ### Model - MobileNetV2
   * [Mobilenet](https://keras.io/api/applications/mobilenet/)
