@@ -1,9 +1,9 @@
 # Project Notes
 ## Useful Files in this Repository Branch
 
-[![README.MD](https://img.shields.io/badge/📝-README-lightgrey)](https://github.com/Diegomca98/research-and-learning/blob/dog-breed-id/README.MD)
-[![Step by Step Summary Diagram](https://img.shields.io/badge/🔍-Notebook_Diagram-lightblue)](https://github.com/Diegomca98/research-and-learning/blob/dog-breed-id/NOTEBOOK_STRUCTURE.MD)
-[![Useful Resources](https://img.shields.io/badge/🛠️-Useful_Resources-pink)](https://github.com/Diegomca98/research-and-learning/blob/dog-breed-id/USEFUL_RESOURCES.MD)
+[![README.md](https://img.shields.io/badge/📝-README-lightgrey)](https://github.com/Diegomca98/research-and-learning/blob/dog-breed-id/README.md)
+[![Step by Step Summary Diagram](https://img.shields.io/badge/🔍-Notebook_Diagram-lightblue)](https://github.com/Diegomca98/research-and-learning/blob/dog-breed-id/NOTEBOOK_STRUCTURE.md)
+[![Useful Resources](https://img.shields.io/badge/🛠️-Useful_Resources-pink)](https://github.com/Diegomca98/research-and-learning/blob/dog-breed-id/USEFUL_RESOURCES.md)
 
 ## Notes
 To work with TensorFlow we have to transform the data into Tensors, the Tensors are pretty similar to Numpy Arrays:
