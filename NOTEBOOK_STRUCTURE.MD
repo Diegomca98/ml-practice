@@ -58,18 +58,17 @@
 |   |   |   |   ├── ✔️ Create callback to save logs into a directory
 |   |   |   |   ├── ✔️ Pass the callback to our model's fit() function
 |   |   |   |   └── ✔️ Visualize our models training logs with the %tensorboard magic function after model training
-|   |   |   ├── ✔️ Early Stop Callback
-|   |   ├── ✔️ Create function to train the model for experimentation using the previously defined functions and callbacks
-|   ├── ✔️ Evaluating the Model
-|   └── 🕜 Preventing Overfitting
+|   |   |   └── ✔️ Preventing Overfitting - 
+|   |   |   |   └── ✔️ Early Stop Callback
+├── └── └── ✔️ Create function to train the model for experimentation using the previously defined functions and callbacks
 |
 ├── 10. Deep Neural Network
-|   ├── ❗ Training the DNN
-|   ├── ❗ Evaluating Performance with TensorBoard
-|   ├── ❗ Make Predictions
-|   ├── ❗ Transform Predictions to Text
-|   ├── ❗ Visualizing Predictions
-|   └── ❗ Evaluate Predictions
+|   ├── ✔️ Training the DNN
+|   ├── ✔️ Evaluating Performance with TensorBoard
+|   ├── 🕜 Make Predictions
+|   ├── 🕜 Transform Predictions to Text
+|   ├── 🕜 Visualizing Predictions
+|   └── 🕜 Evaluate Predictions
 |
 ├── 11. Model
 |   ├── ❗ Save Model
